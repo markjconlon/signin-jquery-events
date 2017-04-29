@@ -7,4 +7,15 @@ $(function () {
     $('.modal').fadeOut();
   });
 
+  $('.submit').on('click', function(){
+    $('input').addClass('input.error')
+  });
+
+  $('form').find('input[name="user"]').on('click',function(){
+    $('input').removeClass('input.error')
+  });
+
+  $('form').find('input[name="pass"]').on('click',function(){
+    $('input').removeClass('input.error')
+  });
 });
